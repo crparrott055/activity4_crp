@@ -1,0 +1,58 @@
+/* styles.css - Starter File */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#top, #bottom {
+    background-color: #00477f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #222;
+}
+
+#menu li {
+    padding: 10px;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+}
+
+#content {
+    padding: 15px;
+}
+
+.box {
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+#side {
+    background-color: #ddd;
+    padding: 15px;
+    margin: 15px;
+}
+
+#image {
+    text-align: center;
+    margin: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
