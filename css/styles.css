@@ -1,20 +1,29 @@
-/* styles.css - Starter File */
+/* styles.css */
+
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     background-color: #f4f4f4;
     color: #333;
+    text-align: left;
 }
 
-#top, #bottom {
+header, footer {
     background-color: #00477f;
     color: white;
     text-align: center;
     padding: 15px;
 }
 
-#menu ul {
+header h1 {
+    text-shadow: 2px 2px 4px #000;
+}
+
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -22,37 +31,83 @@ body {
     background-color: #222;
 }
 
-#menu li {
+nav li {
     padding: 10px;
 }
 
-#menu a {
+nav a {
     color: white;
     text-decoration: none;
 }
 
+/* Hover effect */
+nav a:hover {
+    color: #ffcc00;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* Grid layout */
 #content {
-    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
-.box {
+article {
     background-color: white;
-    margin-bottom: 15px;
     padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-#side {
+aside {
     background-color: #ddd;
     padding: 15px;
-    margin: 15px;
+    margin: 15px 0;
+    opacity: 0.9;
 }
 
-#image {
+figure {
+    margin: 15px 0;
     text-align: center;
-    margin: 15px;
 }
 
 img {
     max-width: 100%;
     height: auto;
+}
+
+/* ===== Tablet ===== */
+@media screen and (min-width: 768px) {
+
+    #content {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav li {
+        padding: 10px 20px;
+    }
+}
+
+/* ===== Desktop ===== */
+@media screen and (min-width: 1024px) {
+
+    main {
+        max-width: 1100px;
+    }
+
+    #content {
+        gap: 30px;
+    }
 }
