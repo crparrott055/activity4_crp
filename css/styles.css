@@ -13,7 +13,7 @@ body {
 }
 
 header, footer {
-    background-color: #00477f;
+    background-color: #be583f;
     color: white;
     text-align: center;
     padding: 15px;
@@ -28,7 +28,7 @@ nav ul {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #222;
+    background-color: #3a3330;
 }
 
 nav li {
@@ -42,7 +42,7 @@ nav a {
 
 /* Hover effect */
 nav a:hover {
-    color: #ffcc00;
+    color: #e6b13e;
 }
 
 main {
@@ -66,7 +66,7 @@ article {
 }
 
 aside {
-    background-color: #ddd;
+    background-color: rgba(230, 177, 62,0.5);
     padding: 15px;
     margin: 15px 0;
     opacity: 0.9;
